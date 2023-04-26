@@ -1,6 +1,5 @@
 import axios from "axios";
 import api from "../../utils/api";
-import { setSession } from "../../utils/jwt";
 
 export const uploadImage = (editImages) => async (dispatch) => {
   try {

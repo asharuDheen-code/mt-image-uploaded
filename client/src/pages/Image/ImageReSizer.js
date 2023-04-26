@@ -90,81 +90,12 @@ function ImageReSizer() {
   return (
     <div>
       <ToastContainer />
-      {/* <Stack sx={{ alignItems: "center" }}>
-        <TextField
-          margin="normal"
-          required
-          value={imgHight}
-          id="height"
-          label="Image Hight"
-          name="height"
-          autoComplete="height"
-          autoFocus
-          onChange={(e) => setImgHight(e.target.value)}
-          sx={{ width: "20%" }}
-        />
-        <TextField
-          margin="normal"
-          required
-          value={imgWidth}
-          id="width"
-          label="Image Width"
-          name="width"
-          autoComplete="width"
-          autoFocus
-          onChange={(e) => setImgWidth(e.target.value)}
-          sx={{ width: "20%", pb: 2 }}
-        />
-        {imgHight && imgWidth ? (
-          <input type="file" onChange={fileChangedHandler} />
-        ) : null}
-        <img src={newImage} alt="" style={{ marginTop: 30 }} />
-        <TextField
-          margin="normal"
-          required
-          value={newImage}
-          id="width"
-          label="url (base64)"
-          name="width"
-          autoComplete="width"
-          autoFocus
-          onClick={() => {
-            navigator.clipboard.writeText(newImage);
-          }}
-          sx={{ width: "20%", pb: 2 }}
-        />
-      </Stack>
-      <Stack direction="row" sx={{ justifyContent: "center" }} spacing={1}>
-        <Button
-          type="submit"
-          // fullWidth
-          variant="contained"
-          // sx={{ mt: 3, mb: 2 }}
-          // onClick={submitImage}
-        >
-          Submit
-        </Button>
-        <Button
-          type="submit"
-          // fullWidth
-          success
-          variant="contained"
-          // sx={{ mt: 3, mb: 2 }}
-          onClick={clearFields}
-        >
-          Clear
-        </Button>
-      </Stack> */}
       <Stack sx={{ alignItems: "center", m: 2 }}>
         <input
           type="file"
           accept="image/*"
-          // style={{ display: "none" }}
-          // maxSize={1000}
           id="contained-button-file"
           onChange={onImageChange}
-          // width="1500"
-          // height="800"
         />
         <Button
           type="submit"
